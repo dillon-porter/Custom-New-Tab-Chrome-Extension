@@ -14,12 +14,20 @@
         <div id="clock" aria-label="Current Time"></div>
         <div id="date" aria-label="Current Date"></div>
 
+        <div id="theme-toggle">
+            <label for="theme-checkbox" id="theme-label">
+                <span id="theme-icon">🌞</span> <!-- Default icon (sun) -->
+                <span id="theme-toggle-text">Switch to Dark Mode</span> <!-- Default text -->
+                <input type="checkbox" id="theme-checkbox">
+            </label>
+        </div>
+
         <nav id="quick-links" aria-label="Quick Links">
             <h2>Quick Links</h2>
-            <label for="new-link-name">Link Name:</label>
+            <label for="new-link-name" class="visually-hidden">Link Name:</label>
             <input type="text" id="new-link-name" placeholder="Enter Link Name" aria-label="New Link Name">
 
-            <label for="new-link-url">Link URL:</label>
+            <label for="new-link-url" class="visually-hidden">Link URL:</label>
             <input type="text" id="new-link-url" placeholder="Enter Link URL" aria-label="New Link URL">
 
             <button id="add-link">Add Link</button>
@@ -28,7 +36,7 @@
 
         <section id="todo-list" aria-label="To-Do List">
             <h2>To-Do List</h2>
-            <label for="new-task">New Task:</label>
+            <label for="new-task" class="visually-hidden">New Task:</label>
             <input type="text" id="new-task" placeholder="Enter New Task" aria-label="New To-Do Task">
 
             <button id="add-task">Add Task</button>

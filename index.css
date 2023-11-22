@@ -14,7 +14,7 @@ body {
     padding: 10px;
 }
 
-label {
+.visually-hidden {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -30,20 +30,23 @@ label {
     font-size: 24px;
 }
 
-#weather {
-    margin: 20px 0;
-}
-
 #quick-links h2,
 #todo-list h2 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
 
-#quick-links ul,
-#todo-list ul {
-    list-style-type: none;
-    padding: 0;
+#quick-links li,
+#todo-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #quick-links li,
@@ -52,6 +55,11 @@ label {
     font-size: 16px;
     padding: 5px;
     font-weight: 500;
+}
+
+#quick-links a:visited,
+#todo-list a:visited {
+    color: #0066cc;
 }
 
 #new-link-name,
@@ -95,28 +103,103 @@ button:focus {
     margin-bottom: 15px;
 }
 
-#add-link {
-    width: 750px;
-}
-
+#add-link,
 #add-task {
-    width: 750px;
-}
-
-#links-list button {
-    height: 40px;
+    width: calc(90% - 20px);
+    padding: 10px 15px;
     font-size: 16px;
-    border-radius: none;
-    border: none;
-    margin-left: 5px;
+    margin: 10px 0;
 }
 
+#links-list button,
 #tasks button {
-    height: 40px;
+    padding: 8px 16px;
+    margin-left: 10px;
     font-size: 16px;
-    border-radius: none;
-    border: none;
-    margin-left: 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+
+/* Theme */
+
+#theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#theme-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#theme-toggle-text {
+    font-size: 16px;
+    cursor: pointer;
+    /* Additional styling as needed */
+}
+
+#theme-checkbox {
+    display: none;
+}
+
+
+/* Night Mode Theme */
+
+.theme-night {
+    background-color: #1a1a1a;
+    color: #d9d9d9;
+}
+
+.theme-night #dashboard {
+    background-color: #262626;
+}
+
+.theme-night label {
+    color: #d9d9d9;
+}
+
+.theme-night #quick-links a:visited,
+.theme-night #todo-list a:visited {
+    color: #4da6ff;
+}
+
+.theme-night #clock,
+.theme-night #date,
+.theme-night #greeting {
+    color: #ffffff;
+}
+
+.theme-night #quick-links h2,
+.theme-night #todo-list h2 {
+    border-bottom: 1px solid #444;
+}
+
+.theme-night #quick-links li,
+.theme-night #todo-list li {
+    background-color: #333333;
+    color: #d9d9d9;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.theme-night button {
+    background-color: #505050;
+    color: #d9d9d9;
+}
+
+.theme-night button:hover {
+    background-color: #606060;
+}
+
+.theme-night button:active {
+    background-color: #707070;
+}
+
+.theme-night #theme-icon {
+    color: #ffffff;
 }
 
 
@@ -139,7 +222,8 @@ button:focus {
     #links-list button,
     #tasks button {
         width: 95%;
-        margin-bottom: 4px;
-        margin-top: 10px;
+        /* Increase width on mobile for better touch interaction */
+        margin: 10px 10px;
+        /* Increase margin for spacing */
     }
 }
