@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom New Tab Chrome Extension</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="dashboard">
+        <div id="greeting" aria-label="Greeting"></div>
+        <div id="clock" aria-label="Current Time"></div>
+        <div id="date" aria-label="Current Date"></div>
+
+        <nav id="quick-links" aria-label="Quick Links">
+            <h2>Quick Links</h2>
+            <label for="new-link-name">Link Name:</label>
+            <input type="text" id="new-link-name" placeholder="Enter Link Name" aria-label="New Link Name">
+
+            <label for="new-link-url">Link URL:</label>
+            <input type="text" id="new-link-url" placeholder="Enter Link URL" aria-label="New Link URL">
+
+            <button id="add-link">Add Link</button>
+            <ul id="links-list" aria-label="List of Quick Links"></ul>
+        </nav>
+
+        <section id="todo-list" aria-label="To-Do List">
+            <h2>To-Do List</h2>
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task" placeholder="Enter New Task" aria-label="New To-Do Task">
+
+            <button id="add-task">Add Task</button>
+            <ul id="tasks" aria-label="List of To-Do Items"></ul>
+        </section>
+
+        <button id="go-to-google" aria-label="Go to Google">Go to Google</button>
+        <button id="clear-lists" aria-label="Clear All Lists">Clear My Lists</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
