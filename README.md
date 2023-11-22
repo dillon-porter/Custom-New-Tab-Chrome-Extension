@@ -1,5 +1,7 @@
 # Custom New Tab Chrome Extension
 
+#### Video Demo: https://youtu.be/EHXRMGWvjC4?si=ZYwDehcXbFJ-Hk38
+
 ## Introduction
 
 This Chrome extension replaces the default new tab page with a custom dashboard featuring a personalized greeting, a clock, quick links, and a to-do list. It's designed to enhance productivity and provide quick access to frequently visited websites and tasks.
@@ -17,7 +19,7 @@ This Chrome extension replaces the default new tab page with a custom dashboard 
 To add this extension to your Chrome browser, follow these steps:
 
 1. **Download the Extension**:
-   - Download the extension files from [GitHub](https://github.com/your-repository-link) or wherever it is hosted.
+   - Download the extension files from [GitHub](https://github.com/dillon-porter/Custom-New-Tab-Chrome-Extension/)
    - Unzip the downloaded file if it's in a compressed format.
 
 2. **Open Chrome Extensions**:
