@@ -1,6 +1,6 @@
 # Custom New Tab Chrome Extension
 
-#### Video Demo:  <URL HERE>
+#### Video Demo: https://youtu.be/EHXRMGWvjC4?si=ZYwDehcXbFJ-Hk38
 
 ## Introduction
 
